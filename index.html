@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>IoT Quiz</h1>
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. What does IoT stand for?</p>
+                <label><input type="radio" name="q1" value="a"> Internet of Technology</label>
+                <label><input type="radio" name="q1" value="b"> Internet of Things</label>
+                <label><input type="radio" name="q1" value="c"> Interoperability of Things</label>
+                <label><input type="radio" name="q1" value="d"> Information of Things</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. Which of the following is a "Thing" in IoT?</p>
+                <label><input type="radio" name="q2" value="a"> A physical object with an embedded system</label>
+                <label><input type="radio" name="q2" value="b"> A cloud-based server</label>
+                <label><input type="radio" name="q2" value="c"> A mobile application</label>
+                <label><input type="radio" name="q2" value="d"> An email system</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. What is the main function of sensors in IoT?</p>
+                <label><input type="radio" name="q3" value="a"> To route data to the cloud</label>
+                <label><input type="radio" name="q3" value="b"> To process data</label>
+                <label><input type="radio" name="q3" value="c"> To collect data from the surroundings</label>
+                <label><input type="radio" name="q3" value="d"> To create network connectivity</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. Which of the following is an example of a sensor in IoT?</p>
+                <label><input type="radio" name="q4" value="a"> Gas sensor</label>
+                <label><input type="radio" name="q4" value="b"> Microcontroller</label>
+                <label><input type="radio" name="q4" value="c"> LAN</label>
+                <label><input type="radio" name="q4" value="d"> Mobile phone</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. What role do processors play in IoT systems?</p>
+                <label><input type="radio" name="q5" value="a"> They process raw data into useful information</label>
+                <label><input type="radio" name="q5" value="b"> They manage data routing</label>
+                <label><input type="radio" name="q5" value="c"> They monitor sensors</label>
+                <label><input type="radio" name="q5" value="d"> They store data</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6. Which device type is commonly used as a processor in IoT?</p>
+                <label><input type="radio" name="q6" value="a"> Moisture sensor</label>
+                <label><input type="radio" name="q6" value="b"> Microcontroller</label>
+                <label><input type="radio" name="q6" value="c"> Gateway</label>
+                <label><input type="radio" name="q6" value="d"> Actuator</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 7 -->
+            <div class="question">
+                <p>7. What is the function of gateways in IoT?</p>
+                <label><input type="radio" name="q7" value="a"> To process raw data</label>
+                <label><input type="radio" name="q7" value="b"> To route data to proper locations</label>
+                <label><input type="radio" name="q7" value="c"> To store collected data</label>
+                <label><input type="radio" name="q7" value="d"> To extract intelligence from data</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 8 -->
+            <div class="question">
+                <p>8. Which of the following provides network connectivity in an IoT system?</p>
+                <label><input type="radio" name="q8" value="a"> Processor</label>
+                <label><input type="radio" name="q8" value="b"> Gateway</label>
+                <label><input type="radio" name="q8" value="c"> Sensor</label>
+                <label><input type="radio" name="q8" value="d"> Actuator</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 9 -->
+            <div class="question">
+                <p>9. Which component forms the front end of IoT devices?</p>
+                <label><input type="radio" name="q9" value="a"> Processors</label>
+                <label><input type="radio" name="q9" value="b"> Sensors</label>
+                <label><input type="radio" name="q9" value="c"> Gateways</label>
+                <label><input type="radio" name="q9" value="d"> Applications</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 10 -->
+            <div class="question">
+                <p>10. In IoT, applications are typically hosted on which platform?</p>
+                <label><input type="radio" name="q10" value="a"> Desktop</label>
+                <label><input type="radio" name="q10" value="b"> Cloud</label>
+                <label><input type="radio" name="q10" value="c"> Embedded systems</label>
+                <label><input type="radio" name="q10" value="d"> Local servers</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 11 -->
+            <div class="question">
+                <p>11. What characteristic of IoT ensures devices can connect to the infrastructure at any time?</p>
+                <label><input type="radio" name="q11" value="a"> Interoperability</label>
+                <label><input type="radio" name="q11" value="b"> Connectivity</label>
+                <label><input type="radio" name="q11" value="c"> Scalability</label>
+                <label><input type="radio" name="q11" value="d"> Intelligence</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 12 -->
+            <div class="question">
+                <p>12. Why is "identity" important in IoT systems?</p>
+                <label><input type="radio" name="q12" value="a"> To ensure devices have unique identifiers</label>
+                <label><input type="radio" name="q12" value="b"> To enhance network speed</label>
+                <label><input type="radio" name="q12" value="c"> To allow multiple devices to share the same IP address</label>
+                <label><input type="radio" name="q12" value="d"> To improve sensor accuracy</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 13 -->
+            <div class="question">
+                <p>13. Which characteristic ensures IoT devices can handle the expansion of connected devices?</p>
+                <label><input type="radio" name="q13" value="a"> Connectivity</label>
+                <label><input type="radio" name="q13" value="b"> Scalability</label>
+                <label><input type="radio" name="q13" value="c"> Intelligence</label>
+                <label><input type="radio" name="q13" value="d"> Identity</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 14 -->
+            <div class="question">
+                <p>14. What does dynamic adaptability in IoT refer to?</p>
+                <label><input type="radio" name="q14" value="a"> The ability to change device functionality based on context</label>
+                <label><input type="radio" name="q14" value="b"> The capacity to store large amounts of data</label>
+                <label><input type="radio" name="q14" value="c"> The use of fixed algorithms for processing</label>
+                <label><input type="radio" name="q14" value="d"> The ability to connect to any network</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 15 -->
+            <div class="question">
+                <p>15. Which architecture model is commonly used in IoT?</p>
+                <label><input type="radio" name="q15" value="a"> Three-tier architecture</label>
+                <label><input type="radio" name="q15" value="b"> Client-server architecture</label>
+                <label><input type="radio" name="q15" value="c"> Layered architecture</label>
+                <label><input type="radio" name="q15" value="d"> Monolithic architecture</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 16 -->
+            <div class="question">
+                <p>16. What is an actuator in an IoT system?</p>
+                <label><input type="radio" name="q16" value="a"> A device that collects data</label>
+                <label><input type="radio" name="q16" value="b"> A device that processes data</label>
+                <label><input type="radio" name="q16" value="c"> A device that performs actions based on received data</label>
+                <label><input type="radio" name="q16" value="d"> A device that routes data</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 17 -->
+            <div class="question">
+                <p>17. Which protocol is commonly used for communication in IoT?</p>
+                <label><input type="radio" name="q17" value="a"> HTTP</label>
+                <label><input type="radio" name="q17" value="b"> FTP</label>
+                <label><input type="radio" name="q17" value="c"> MQTT</label>
+                <label><input type="radio" name="q17" value="d"> SMTP</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 18 -->
+            <div class="question">
+                <p>18. What is the primary concern with IoT security?</p>
+                <label><input type="radio" name="q18" value="a"> Data redundancy</label>
+                <label><input type="radio" name="q18" value="b"> Unauthorized access to devices</label>
+                <label><input type="radio" name="q18" value="c"> Slow data transfer</label>
+                <label><input type="radio" name="q18" value="d"> Device obsolescence</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 19 -->
+            <div class="question">
+                <p>19. Which of the following is a characteristic of smart homes?</p>
+                <label><input type="radio" name="q19" value="a"> No connectivity</label>
+                <label><input type="radio" name="q19" value="b"> Energy efficiency and automation</label>
+                <label><input type="radio" name="q19" value="c"> Complexity in management</label>
+                <label><input type="radio" name="q19" value="d"> Increased manual control</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 20 -->
+            <div class="question">
+                <p>20. How do IoT devices typically communicate with each other?</p>
+                <label><input type="radio" name="q20" value="a"> Using direct wired connections</label>
+                <label><input type="radio" name="q20" value="b"> Through wireless protocols</label>
+                <label><input type="radio" name="q20" value="c"> Via USB connections</label>
+                <label><input type="radio" name="q20" value="d"> Only through Bluetooth</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 21 -->
+            <div class="question">
+                <p>21. What is a common application of IoT in healthcare?</p>
+                <label><input type="radio" name="q21" value="a"> Personal fitness tracking</label>
+                <label><input type="radio" name="q21" value="b"> Data entry</label>
+                <label><input type="radio" name="q21" value="c"> Manual patient monitoring</label>
+                <label><input type="radio" name="q21" value="d"> Basic medical records management</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 22 -->
+            <div class="question">
+                <p>22. What does the term "smart city" refer to?</p>
+                <label><input type="radio" name="q22" value="a"> A city with many skyscrapers</label>
+                <label><input type="radio" name="q22" value="b"> A city that uses technology to enhance performance and wellbeing</label>
+                <label><input type="radio" name="q22" value="c"> A city with high population density</label>
+                <label><input type="radio" name="q22" value="d"> A city with traditional infrastructure</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 23 -->
+            <div class="question">
+                <p>23. Which IoT application can help in pollution monitoring?</p>
+                <label><input type="radio" name="q23" value="a"> Smart thermostat</label>
+                <label><input type="radio" name="q23" value="b"> Environmental sensors</label>
+                <label><input type="radio" name="q23" value="c"> Wearable devices</label>
+                <label><input type="radio" name="q23" value="d"> Smart lights</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 24 -->
+            <div class="question">
+                <p>24. What is the main purpose of using cloud computing in IoT?</p>
+                <label><input type="radio" name="q24" value="a"> To decrease storage costs</label>
+                <label><input type="radio" name="q24" value="b"> To increase security</label>
+                <label><input type="radio" name="q24" value="c"> To provide scalable data storage and processing</label>
+                <label><input type="radio" name="q24" value="d"> To limit data access</label>
+                <p class="feedback"></p>
+            </div>
+            <!-- Question 25 -->
+            <div class="question">
+                <p>25. What role do IoT applications play in the system?</p>
+                <label><input type="radio" name="q25" value="a"> Collect data</label>
+                <label><input type="radio" name="q25" value="b"> Route data</label>
+                <label><input type="radio" name="q25" value="c"> Process data</label>
+                <label><input type="radio" name="q25" value="d"> Render effective meaning to collected data</label>
+                <p class="feedback"></p>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
